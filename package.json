@@ -15,11 +15,12 @@
   ],
   "scripts": {
     "pretest": "jshint *.js lib/. test/. examples/.",
-    "test": "mocha -R spec test/*.js"
+    "test": "mocha -R spec test/*.js",
+    "install": "node-gyp rebuild"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abandonware/bleno"
+    "url": "git+https://github.com/kotlyarovsa/bleno.git"
   },
   "keywords": [
     "BLE",
@@ -33,7 +34,6 @@
     "Jacob Rosenthal"
   ],
   "license": "MIT",
-  "readmeFilename": "README.md",
   "devDependencies": {
     "jshint": "~2.12.0",
     "should": "~13.2.3",
@@ -50,5 +50,15 @@
     "bplist-parser": "0.3.0",
     "xpc-connect": "^2.0.0"
   },
-  "types": "./index.d.ts"
+  "types": "./index.d.ts",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/kotlyarovsa/bleno/issues"
+  },
+  "homepage": "https://github.com/kotlyarovsa/bleno#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  }
 }
