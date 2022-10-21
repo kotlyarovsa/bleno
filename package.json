@@ -1,5 +1,5 @@
 {
-  "name": "@abandonware/bleno",
+  "name": "@kotlyarovsa/bleno",
   "version": "0.5.1-4",
   "description": "A Node.js module for implementing BLE (Bluetooth Low Energy) peripherals",
   "main": "index.js",
